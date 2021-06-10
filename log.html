@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+    background-image: url(789.jpg);
+    background-size: cover;
+    margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgba(0, 0, 0, 0.007);
+  display: flex;
+}
+
+li {
+  float: left;
+  font-size: 30px;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(179, 15, 15,0.692);
+}
+li a:hover:not(.active) {
+  background-color:rgba(179, 15, 15, 0.692);
+}
+.active {
+  background-color:rgba(179, 15, 15, 0.692);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f94b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+input[type=text], select, textarea  {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: larger;
+}
+input[type=password]  , input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 12px;
+  display: inline-block;
+  font-size: 30px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: 200px;
+  font-size: 30px;
+}
+input[type=button]{
+background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: right; }
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f254;
+  padding: 20px;
+  width: 50%;
+  margin-left:25%;
+}
+
+.col-25 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  ul{   
+    flex-direction:column;
+    background-color: rgba(0, 0, 0, 0.438);
+    text-align: center;
+  }
+</style> 
+   <script>
+  function verify() {  
+  var pw = document.getElementById("pass").value;
+  var str=pw.charAt(0);
+  var str1=pw.charAt(0).toUpperCase();
+  
+    if(pw == "") {  
+     document.getElementById("message").innerHTML = "**Fill the password please!";  
+     return false;  
+  }  
+   
+ //minimum password length validation  
+  if(pw.length < 8 || pw.length > 8) {  
+     document.getElementById("message").innerHTML = "**Password length must be 8 characters";  
+     return false;  
+  }  
+  
+
+if(str != str1){
+  document.getElementById("message").innerHTML = "**Password must start with upper character";  
+     return false;
+
+}   
+   else {  
+     alert("thanks");  
+  }  
+}  
+
+</script>
+
+
+</head>
+<body>
+
+
+<ul>
+    <li><a  href="protest.html">Home</a></li>
+    
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Companies</a>
+    <div class="dropdown-content">
+      <a href="bmw.html">BMW</a>
+      <a href="hunda.html">Hyundai</a>
+      <a href="mers.html">Mercedies</a>
+      <a href="pego.html">peugeot
+      
+      </a>
+    </div>
+  </li>
+  <li><a href="cont.html">contact</a></li>
+    <li><a  href="about.html">About</a></li>
+  <li style="float: right" class="log" ><a href="log.html"class="active">registrate</a></li>
+</ul>
+
+<div class="container">
+    <form action="protest.html" id="form" onsubmit ="return verify()">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+ 
+ 
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="mail">Your Email</label>
+    </div>
+    <div class="col-75">
+      <input type="email" id="mail" name="email" placeholder="Enter Your Email" required >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="pass">password</label>
+    </div>
+    <div class="col-75">
+      <input type="password" id="pass" name="password" placeholder="password">
+      <span id = "message" style="color:red"> </span> <br><br>
+    </div>
+    <small id="text"></small>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="gener"> gender</label>
+    </div>
+    <div class="col-75">
+      <select id="gener" name=gender">
+        <option value="male">male </option>
+        <option value="female"> female</option>
+        
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="number">Phone Number</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="number" name="phone Number" placeholder="Enter Your Phone Number" minlength="11" maxlength="11">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="add">Address</label>
+    </div>
+    <div class="col-75">
+      <textarea id="add" name="address" placeholder=" Enter your Adress" style="height:100px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="submit"  name="submit"   >
+   </div
+
+
+  </form>
+
+</div>
+
+    
+   
+</body>
+</html>

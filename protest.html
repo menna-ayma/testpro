@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+    background-image: url(789.jpg);
+    background-size: cover;
+    margin:0;
+    background-repeat: no-repeat;
+    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgba(0, 0, 0, 0.007);
+  display: flex;
+}
+
+li {
+  float: left;
+  font-size: 30px;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(179, 15, 15,0.692);
+}
+li a:hover:not(.active) {
+  background-color:rgba(179, 15, 15, 0.692);
+}
+.active {
+  background-color:rgba(179, 15, 15, 0.692);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f94b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  ul{
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  body{
+    background-size: cover;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body >
+<div class="topnav">
+<ul>
+    <li><a class="active" href="protest.html">Home</a></li>
+    
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Companies</a>
+    <div class="dropdown-content">
+      <a href="bmw.html">BMW</a>
+      <a href="hunda.html">Hyundai</a>
+      <a href="mers.html">Mercedies</a>
+      <a href="pego.html">peugeot
+      
+      </a>
+    </div>
+  </li>
+  <li><a href="cont.html">contact</a></li>
+    <li><a  href="about.html">About</a></li>
+  <li style="float: right;" class="log" ><a href="log.html">registrate</a></li>
+</ul>
+</div>
+<marquee behavior="alternate" style="font-size: 50px; color: rgb(255, 15, 15); background-color: rgba(0, 0, 0, 0.281);margin-top:90px ;">
+Welcome For You In Cars Website
+</marquee>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgba(0, 0, 0, 0.007);
+    display: flex;
+  }
+  
+  li {
+    float: left;
+    font-size: 30px;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(179, 15, 15,0.692);
+  }
+  li a:hover:not(.dropbtn) {
+    background-color:rgba(179, 15, 15, 0.692);
+  }
+  .dropbtn {
+    background-color:rgba(179, 15, 15, 0.692);
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f979;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+ body {
+    background-image: url(789.jpg);
+    background-size: cover;
+    margin:0;}
+
+ 
+div.gallery {
+border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+border: 1px solid #777;
+}
+
+div.gallery img {
+width: 100%;
+height: auto;
+}
+
+div.desc {
+padding: 15px;
+text-align: center;
+}
+
+* {
+box-sizing: border-box;
+}
+
+.responsive {
+padding: 0 6px;
+float: left;
+width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+.responsive {
+width: 49.99999%;
+margin: 6px 0;
+}
+ul{
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+.responsive {
+width: 100%;
+}
+ul{
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+  }
+}
+
+.clearfix:after {
+content: "";
+display: table;
+clear: both;
+}
+  </style>
+  </head>
+  <body>
+  
+  <ul>
+      <li><a  href="protest.html">Home</a></li>
+      
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn" class="active" >Companies</a>
+      <div class="dropdown-content">
+        <a href="bmw.html">BMW</a>
+        <a href="hunda.html">Hyundai</a>
+        <a href="mers.html">Mercedies</a>
+        <a href="pego.html">peugeot 
+        
+        </a>
+      </div>
+    </li>
+    <li><a href="cont.html">contact</a></li>
+      <li><a  href="about.html">About</a></li>
+    <li style="float: right;"><a href="log.html">registrate</a></li>
+  </ul>
+  
+ <p style="text-align: center; font-size: 30px;  color: rgba(255, 235, 205, 0.733);"><img src="logo4.jfif" width="70px"height="60px" float center> Mercedies Cars </p>
+
+ <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="mer1.jpg">
+        <img src="mer1.jpg" alt="BMW X" width="600" height="400">
+      </a>
+      <div class="desc" style="background-color: rgba(0, 0, 0, 0.651); color: blanchedalmond;">Mercedes-AMG GT 43<br> The Mercedes-AMG GT 43 competes with cars such as the Porsche Panamera Turbo S, the BMW 850M sports car and the Audi RS7, and in the same price category here in the Egyptian market we find the Maserati Quattroporte.
+ 
+         The car enters the Egyptian market through the local agents of the German company Mercedes in Egypt. It comes in only two categories, and the price of the car starts from 2,790,000 Egyptian pounds.
+         
+         Mercedes AMG GT 43 Coupe
+         Just one look at the Mercedes-AMG GT43 can give the impression that this four-door coupe is extremely fast. Although it's the least expensive of the GT 4-Door lineup, it looks mostly identical to its GT53 siblings, GT63s, and GT63s. But there is one exception is that it contains the name GT43 only.
+         Engine speed: 3000 cc turbo, acceleration: from 0 to 100 in 4.9 seconds
+         Horsepower: 367 hp, Torque: 500 Nm,
+         Size: four-door coupe</div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="mer2.jpg">
+        <img src="mer2.jpg" alt="bmw x3" width="600" height="400">
+      </a>
+      <div class="desc"style="background-color: rgba(0, 0, 0, 0.651); color: blanchedalmond;" >
+         Mercedes AMG A35<br> The AMG A35 competes abroad with many powerful sports cars like it. We find that it competes with the Audi S3 Sportback, as well as the BMW M135i and Volkswagen Golf R, which are powerful sports cars.
+ 
+         The car comes to the Egyptian market belonging to the local Mercedes agents. The car comes with a four-wheel drive system and is a compact hatchback. It comes to the Egyptian market in one category and its price starts from 1,120,000 Egyptian pounds.The Mercedes AMG A35 might be the cheapest of the popular AMG models you can buy especially in the Egyptian market, but the Mercedes A35 AMG still boasts some impressive lively details, there is no doubt that the car is aimed at promising youngsters who are looking for a luxury ride with sporting aspirations. The Mercedes AMG A35 also offers plenty of style, features and performance for the money.
+   </div>
+</div>
+</div>
+  
+  
+ 
+ 
+ <div class="responsive">
+   <div class="gallery">
+     <a target="_blank" href="mer3.jpeg">
+       <img src="mer3.jpeg" alt="bmw" width="600" height="400">
+     </a>
+     <div class="desc"style="background-color:rgba(0, 0, 0, 0.651); color: blanchedalmond;">Mercedes S320 <br> The Mercedes S320 is a German car. This car comes to the Egyptian market affiliated with the agency of Abu Ghali Motors. The car is considered a large luxury sedan, and it comes to the Egyptian market in only one category at a price of 2 million and 250 thousand.
+        The Mercedes S 320 car mainly competes with the BMW 730 and Audi A8, and it also competes with the Lexus LS500, but we see that the German triangle dominates the Egyptian market and Lexus is considered out of competition.
+        Features of the Mercedes S320 model 2020
+The exterior design of the car is characterized by luxury that suits the requirements of customers in this price category.
+The interior design of the car is noticeably more stylish than the competition.
+The materials in the car are more than excellent.
+The car's performance is excellent at all speeds.
+The car's acceleration is strong as it accelerates in 6.4 seconds, but loses to the BMW 730
+        .</div>
+   </div>
+ </div>
+ 
+ <div class="responsive">
+   <div class="gallery">
+     <a target="_blank" href="mer4.jpg">
+       <img src="mer4.jpg" alt="bmw" width="600" height="400">
+     </a>
+     <div class="desc" style="background-color: rgba(0, 0, 0, 0.651); color: blanchedalmond;">Mercedes AMG GT53<br>It is worth noting that when you hear the word AMG in a Mercedes, you must realize that the car whose name was mentioned is a high-performance sports car from Mercedes, and you must realize that it is completely different from the regular Mercedes models.
+
+        The Mercedes-AMG GT 53 competes with cars such as the Porsche Panamera and the BMW 850M sports car, and in the same price category here in the Egyptian market we find the Maserati Quattroporte, which is not considered a sports competitor.
+        The car enters the Egyptian market through the local agents of the German company Mercedes in Egypt, which is of German origin. It comes in only one category and is priced at a price starting from 3 million and 320 thousand pounds up to 3 million and 520 thousand pounds.Engine capacity: 3000cc turbo,
+        Acceleration: 0 to 100 in 4.5 seconds,
+        Horses: 435 hp,
+        Torque: 520 Nm,
+        Size: four-door coupe </div>
+   </div>
+ </div>
+ 
+ <div class="clearfix"></div>
+ 
+  
+  
+  </body>
+  </html>

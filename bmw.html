@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgba(0, 0, 0, 0.007);
+    display: flex;
+  }
+  
+  li {
+    float: left;
+    font-size: 30px;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(179, 15, 15,0.692);
+  }
+  li a:hover:not(.dropbtn) , {
+    background-color:rgba(179, 15, 15, 0.692);
+  }
+  .dropbtn {
+    background-color:rgba(179, 15, 15, 0.692);
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f979;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+ body {
+    background-image: url(789.jpg);
+    background-size: cover;
+    margin:0;}
+
+ 
+div.gallery {
+border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+border: 1px solid #777;
+}
+
+div.gallery img {
+width: 100%;
+height: auto;
+}
+
+div.desc {
+padding: 15px;
+text-align: center;
+}
+
+* {
+box-sizing: border-box;
+}
+
+.responsive {
+padding: 0 6px;
+float: left;
+width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+.responsive {
+width: 49.99999%;
+margin: 6px 0;
+}
+ul{
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+.responsive {
+width: 100%;
+}
+ul{
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+  }
+}
+.clearfix:after {
+content: "";
+display: table;
+clear: both;
+}
+  </style>
+  </head>
+  <body >
+  
+  <ul>
+      <li><a  href="protest.html">Home</a></li>
+      
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn"  >Companies</a>
+      <div class="dropdown-content">
+        <a href="bmw.html" >BMW</a>
+        <a href="hunda.html">Hyundai</a>
+        <a href="mers.html">Mercedies</a>
+        <a href="pego.html">peugeot
+        
+        </a>
+      </div>
+    </li>
+    <li><a href="cont.html">contact</a></li>
+      <li><a  href="about.html">About</a></li>
+    <li style="float: right;"><a href="log.html">registrate</a></li>
+  </ul>
+  
+ <p style="text-align: center; font-size: 30px; color:rgba(255, 235, 205, 0.623);"><img src="images.png" width="50px"height="50px" float center> BMW Cars </p>
+
+
+ <div class="responsive">
+   <div class="gallery">
+     <a target="_blank" href="img_5terre.jpg">
+       <img src="BMW.jpg" alt="BMW X" width="600" height="400">
+     </a>
+     <div class="desc" style="background-color: rgba(0, 0, 0, 0.651); color: blanchedalmond;"> BMW X1<br>Milestones ahead: the new BMW X1 has come to set standards. Its eagerness for action is shown above all in its athletic design. At first glance, it is an X model through and through: its exterior is characterised by short overhangs and a long wheelbase typical of a SAV (Sports Activity Vehicle). It makes its ambitions clear with convincing dynamics and agility. And thanks to high versatility and flexibility in combination with innovative technologies, it ensures maximum comfort on every meter of the ride.
+ 
+         BMW X1 xDrive20i:
+         Fuel consumption in l/100 km (combined): 7.1
+         CO2 emissions in g/km (combined): 163</div>
+   </div>
+ </div>
+ 
+ 
+ <div class="responsive">
+   <div class="gallery">
+     <a target="_blank" href="bmw3.jpg">
+       <img src="bmw3.jpg" alt="bmw x3" width="600" height="400">
+     </a>
+     <div class="desc"style="background-color: rgba(0, 0, 0, 0.651); color: blanchedalmond;" >BMW X6<br>Uncompromisingly non-conformist – the new BMW X6 stands for provocative self-assertiveness. Above all, this is visible in the extremely athletic body of the vehicle along with the new, distinctive design language, which is displayed by the supreme exclusivity and visionary technologies such as the impressive BMW kidney grille ‘Iconic Glow’. All of this primarily points to one thing: absolute dominance, which the new BMW X6 demonstrates quite matter-of-factly on every route thanks to a powerful engine, precise suspension and features such as the xOffroad package. Experience a previously unseen new way of exceeding expectations with the new BMW X6.
+ 
+         BMW X6 M50i:
+         Fuel consumption in l/100 km (combined): 11.5
+         CO2 emissions in g/km (combined): 263</div>
+   </div>
+ </div>
+ 
+ <div class="responsive">
+   <div class="gallery">
+     <a target="_blank" href="bmw4.jpg">
+       <img src="bmw4.jpg" alt="bmw" width="600" height="400">
+     </a>
+     <div class="desc"style="background-color:rgba(0, 0, 0, 0.651); color: blanchedalmond;">BMW X7<br>A statement of the luxury class: the new BMW X7 is the elegant fusion of presence and personality. Despite its majestic appearance, it gives an impression of lightness and agility thanks to the puristic design and athletic styling. At the same time, the considerable spaciousness of the interior offers a pioneering interplay of exclusivity, functionality and freedom – incomparable comfort all the way to the third row of seats. Charm is its essence. Elegance its character.
+         BMW X7 xDrive40i(2):
+         Kraftstoffverbrauch in l/100 km (kombiniert): 9.5
+         CO2-Emissionen in g/km (kombiniert): 217</div>
+   </div>
+ </div>
+ 
+ <div class="responsive">
+   <div class="gallery">
+     <a target="_blank" href="bmw5.jpg">
+       <img src="bmw5.jpg" alt="bmw" width="600" height="400">
+     </a>
+     <div class="desc" style="background-color: rgba(0, 0, 0, 0.651); color: blanchedalmond;">BMW X5<br>The boss is there and is putting everyone in their place: the BMW X5. Its presence is clear for all to see – upright, powerful and elegant. The mighty one-piece double kidney grille hints at what will happen when it takes a deep breath. And the honed X design of the headlights leaves no doubt as to who will take the lead. Equipped with new technologies for more safety and maximum driving dynamics on every surface, the BMW X5 knows where it’s going. And how to get there first.
+ 
+         BMW X5 xDrive40i:
+         Fuel consumption in l/100 km (combined): 9.2
+         CO2 emissions in g/km (combined): 211–210</div>
+   </div>
+ </div>
+ 
+ <div class="clearfix"></div>
+ 
+  
+  
+  </body>
+  </html>
